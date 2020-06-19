@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const StyledDiv = styled.div`
+export const StyledButton = styled.button`
   padding: 12px 16px 12px 16px;
 
   border-radius: 4px;
@@ -10,6 +10,7 @@ export const StyledDiv = styled.div`
   ${props => props.variant === 'fill' && css`
     background-color: #A166F5;
     color: white;
+    border: none;
     `
   }
 
