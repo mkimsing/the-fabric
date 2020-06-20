@@ -8,7 +8,7 @@ const sizes = {
   'xl_desktop': '1700',
 };
 
-const breakpoints = {
+export const breakpoints = {
   'for_phone_only': {
     rule: 'max-width',
     value: sizes.tablet - 1
