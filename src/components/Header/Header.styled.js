@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   margin-left: 24px;
   margin-right: 24px;
+  padding: 13px 0px;
 
   ${media.for_large_desktop_up`
     margin-left: 200px;

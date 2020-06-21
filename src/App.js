@@ -4,17 +4,20 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-
+import GlobalCSS from './shared/globalCSS'
 import Home from './pages/Home/'
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-      </Switch>
-    </Router>
+    <>
+      <GlobalCSS />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
