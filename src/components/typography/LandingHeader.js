@@ -10,6 +10,7 @@ export const LandingHeaderStyle = (size = '30', desktopSize) => css`
   letter-spacing: 3.9px;
   text-transform: uppercase;
   color: rgba(0,0,0.87);
+  margin: 0px;
 `;
 
 const LandingHeader = styled(DynamicComponent)`

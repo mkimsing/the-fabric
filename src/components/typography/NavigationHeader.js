@@ -9,6 +9,7 @@ export const NavigationHeaderStyle = (size = '20', desktopSize) => css`
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #A166F5;
+  margin: 0px;
 `;
 
 const NavigationHeader = styled(DynamicComponent)`

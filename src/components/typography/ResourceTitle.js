@@ -9,6 +9,7 @@ export const ResourceTitleStyle = (size = '20', desktopSize) => css`
   line-height: 24px;
   letter-spacing: 0.15px;
   color: rgba(0,0,0.87);
+  margin: 0px;
 `;
 
 const ResourceTitle = styled(DynamicComponent)`

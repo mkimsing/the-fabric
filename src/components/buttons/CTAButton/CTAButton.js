@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyledCTAButton } from './CTAButton.styled'
-import { FaPlus } from 'react-icons/fa';
-export default function CTAButton({ text = '' }) {
+import { BsPlus } from 'react-icons/bs';
+export default function CTAButton({ text = '', ...rest }) {
   return (
-    <StyledCTAButton>
-      <FaPlus color='white' size={14} style={{ marginRight: 8 }} />
-      {text.toUpperCase()}
+    <StyledCTAButton {...rest}>
+      <BsPlus color='white' className='plus-icon' />
+      {text}
     </StyledCTAButton>
   )
 }

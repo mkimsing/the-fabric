@@ -7,6 +7,7 @@ export const MainStyle = (size = '20', desktopSize) => css`
   font-weight: 400;
   line-height: 24px;
   color: #202020;
+  margin: 0px;
 `;
 
 const Main = styled(DynamicComponent)`
