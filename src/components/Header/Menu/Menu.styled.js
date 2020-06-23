@@ -34,6 +34,7 @@ export const StyledNav = styled.nav`
   .search-resources-button{
    max-width: 300px;
    width: 80%;
+   margin-top: 32px;
   }
  }
 
