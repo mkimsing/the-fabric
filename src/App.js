@@ -7,8 +7,10 @@ import {
 import GlobalCSS from './shared/globalCSS'
 import Home from './pages/Home/'
 import SearchType from './pages/SearchType'
-import SelectCategory from './pages/SelectCategory_Need'
 import Header from './components/Header';
+import SelectCategory from './pages/SelectCategory';
+import LocationSearch from './pages/LocationSearch'
+import routes from './shared/routes';
 function App() {
   return (
     <>
@@ -17,8 +19,9 @@ function App() {
         <Header></Header>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/search-type" component={SearchType} />
-          <Route exact path="/select-category" component={SelectCategory} />
+          <Route path={routes.SEARCH_TYPE} component={SearchType} />
+          <Route path={routes.CATEGORY_SELECT} component={SelectCategory} />
+          <Route path={routes.LOCATION_SEARCH} component={LocationSearch} />
         </Switch>
       </Router>
     </>
