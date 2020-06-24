@@ -5,7 +5,7 @@ import { MdSearch } from 'react-icons/md';
 import routes from '../../shared/routes';
 import NavigationButton from '../../components/buttons/NavigationButton'
 export default function LocationSearch({ location, history }) {
-  let { variant, selected } = location.state
+  let { variant, categories } = location.state
   const [search, setSearch] = useState('')
   let title = variant === 'need' ? 'Where do you need support?' : 'Where do you want to help?'
   return (
@@ -19,8 +19,8 @@ export default function LocationSearch({ location, history }) {
       <div className='navigation-button-container'>
         <div className='navigation-button-container__inner'>
           <NavigationButton text={'Previous Step'} variant='outline' className='navigation-button navigation-button__left'
-            onClick={() => { history.push(routes.CATEGORY_SELECT, { initialSelected: selected, variant: variant }) }} />
-          <NavigationButton text={'Confirm Location'} className='navigation-button' onClick={() => { history.push(routes.LOCATION_SEARCH,) }} />
+            onClick={() => { history.push(routes.CATEGORY_SELECT, { initialSelected: categories, variant: variant }) }} />
+          <NavigationButton text={'Confirm Location'} className='navigation-button' onClick={() => { history.push(routes.SEARCH_RESULTS, { variant: variant, categories: categories, searchLocation: search }) }} />
         </div>
       </div>
     </StyledDiv>
