@@ -13,4 +13,6 @@ export const StyledButton = styled.button`
       letter-spacing: 0.15px;
       text-decoration-line: underline;
       color: #A166F5;
+
+      cursor: pointer;
 `;

@@ -16,6 +16,7 @@ export const StyledHeader = styled.header`
   .logo{
     width: 250px;
     height: auto;
+    cursor: pointer;
   }
 
   .hamburger{
@@ -38,7 +39,7 @@ export const StyledHeader = styled.header`
     &__row{
       width: 2rem;
       height: 0.25rem;
-      background: red;
+      background: black;
       border-radius: 10px;
       transition: all 0.3s linear;
       position: relative;

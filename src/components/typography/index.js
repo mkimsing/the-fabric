@@ -1,10 +1,10 @@
 import LandingHeader from './LandingHeader'
 import Main from './Main'
-import NavigationHeader from './NavigationHeader'
+import PageHeader from './PageHeader'
 import ResourceTitle from './ResourceTitle'
 export {
   LandingHeader,
   Main,
-  NavigationHeader,
+  PageHeader,
   ResourceTitle
 }
