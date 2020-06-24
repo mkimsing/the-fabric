@@ -16,6 +16,7 @@ export const StyledHeader = styled.header`
   .logo{
     width: 250px;
     height: auto;
+    cursor: pointer;
   }
 
   .hamburger{

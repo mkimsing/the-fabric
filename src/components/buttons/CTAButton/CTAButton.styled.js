@@ -19,7 +19,7 @@ export const StyledCTAButton = styled.button`
   letter-spacing: 1.25px;
   font-weight: medium;
 
-  
+  cursor: pointer;
   ${media.for_tablet_landscape_up`
       font-size: 16px;
   `}
