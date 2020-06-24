@@ -72,7 +72,7 @@ export default function SelectCategory({ history, location }) {
       <div className='navigation-button-container'>
         <div className='navigation-button-container__inner'>
           <NavigationButton text={'Previous Step'} variant='outline' className='navigation-button navigation-button__left' onClick={() => { history.push(routes.SEARCH_TYPE) }} />
-          <NavigationButton text={'Confirm Selection'} className='navigation-button' />
+          <NavigationButton text={'Confirm Selection'} className='navigation-button' onClick={() => { history.push(routes.LOCATION_SEARCH, { selected: selected, variant: variant }) }} />
         </div>
       </div>
     </StyledDiv>

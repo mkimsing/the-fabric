@@ -36,11 +36,9 @@ ${edge_gutters}
     ${media.for_tablet_landscape_up`
       max-width: unset;
       width: 512px;
-    `}
-    ${media.for_large_desktop_up`
-        position: relative;
-        bottom: 0px;
-        margin-top: 48px;
+      position: relative;
+      bottom: 0px;
+      margin-top: 48px;
     `}
     &__inner{
       ${edge_gutters}
