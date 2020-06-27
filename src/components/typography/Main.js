@@ -8,6 +8,7 @@ export const MainStyle = (size = '20', desktopSize) => css`
   line-height: 24px;
   color: #202020;
   margin: 0px;
+  letter-spacing: 0.15px;
 `;
 
 const Main = styled(DynamicComponent)`
