@@ -7,7 +7,6 @@ export const ResourceBodyStyle = (size = '16', desktopSize) => css`
   font-size: ${size}px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 1.5px;
   margin: 0px;
   letter-spacing: 0.5px;
   color: rgba(18, 18, 18, 0.87);

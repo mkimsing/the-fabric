@@ -2,7 +2,7 @@
 import styled, { css } from 'styled-components';
 import DynamicComponent from './DynamicComponent';
 
-export const ResourceOverlineStyle = (size = '10', desktopSize) => css`
+export const ResourceOverlineStyle = (size = '10') => css`
   font-family: Roboto;
   font-size: ${size}px;
   font-weight: 500;

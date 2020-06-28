@@ -12,6 +12,7 @@ import SelectCategory from './pages/SelectCategory';
 import LocationSearch from './pages/LocationSearch'
 import routes from './shared/routes';
 import SearchResults from './pages/SearchResults';
+import ResourceDetails from './pages/ResourceDetails';
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <Route path={routes.CATEGORY_SELECT} component={SelectCategory} />
           <Route path={routes.LOCATION_SEARCH} component={LocationSearch} />
           <Route path={routes.SEARCH_RESULTS} component={SearchResults} />
+          <Route path={`${routes.RESOURCE_DETAILS}/:resourceName`} component={ResourceDetails} />
         </Switch>
       </Router>
     </>
