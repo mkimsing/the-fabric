@@ -1,11 +1,47 @@
 import styled from 'styled-components';
 import { edge_gutters, media } from '../../shared/grid'
+import Modal from 'styled-react-modal'
 export const StyledDiv = styled.div`
   ${edge_gutters}
   margin-bottom: 18px;
+  ${media.for_large_desktop_up`
+    max-width: 864px;
+
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  `}
+  ${media.for_tablet_landscape_up`
+    .flex-container{
+      display: flex;
+    }
+  
+    .back-button{
+      margin-top: 43px;
+      margin-bottom: 33px;
+    }
+
+    .col-left{
+      width: 35%;
+      margin-right: 24px;
+    }
+    .col-right{
+      width: 65%;
+    }
+
+    p{
+      margin-bottom: 16px;
+    }
+  `}
+
   h2{
     margin-top: 24px;
     margin-bottom: 40px;
+    ${media.for_tablet_landscape_up`
+      margin-top: 0px;
+      margin-bottom: 16px;
+    `}
   }
 
   .divider{
@@ -18,6 +54,10 @@ export const StyledDiv = styled.div`
     width: 166px;
     height: auto;
     margin-bottom: 24px;
+
+    ${media.for_tablet_landscape_up`
+      width: 100%;
+    `}
   }
 
   .support-title{
@@ -88,8 +128,6 @@ export const StyledDiv = styled.div`
   }
 
   .share{
-    display: flex;
-    align-items: center;
     &__icon{
       margin-right: 5px;
     }
@@ -105,10 +143,64 @@ export const StyledDiv = styled.div`
 
       color: #A166F5;
     }
+
+    &__title-container{
+      display: flex;
+      align-items: center;
+    }
+
+    ${media.for_tablet_landscape_up`
+      .share__icon-container{
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .facebook-icon{
+        margin: 0px 32px;
+      }
+
+      .linkedin-icon{
+        margin-right: 32px;
+      }
+    `}
   }
 
   .navigation-button{
     margin-bottom: 24px;
     width: 100%;
+  }
+`;
+
+export const StyledModal = Modal.styled`
+  width: 366px;
+  background: white;
+  position: relative;
+  padding: 32px;
+  box-sizing: border-box;
+  .modal__close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .modal__title{
+    text-align: center;
+  }
+
+  .modal__icon-container{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .facebook-icon{
+    margin: 0px 32px;
+  }
+
+  .linkedin-icon{
+    margin-right: 32px;
   }
 `;
